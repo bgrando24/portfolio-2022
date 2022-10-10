@@ -1,12 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Welcome } from './components/welcome/Welcome';
 
 function App() {
   return (
-    <div className='container bg-gray-500'>
-      <p className='text-center text-white-100'>Welcome to tailwind!</p>
-    </div>    
+    <div className='container w-screen'>
+      <Welcome />
+    </div>  
   );
 }
+
+
+// General structure:
+/**
+ * Welcome
+ * About me
+ * Skills
+ * Projects
+ * Contact
+ */
 
 export default App;
