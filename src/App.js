@@ -2,7 +2,7 @@ import { Welcome } from './components/welcome/Welcome';
 
 function App() {
   return (
-    <div className='container w-screen'>
+    <div className='w-screen h-screen bg-gray-200'>
       <Welcome />
     </div>  
   );

@@ -1,11 +1,11 @@
 // Displays the welcome message when user first lands on page
 
-import './Welcome.css';
+import React from "react"
 
 export function Welcome() {
     return (
-        <div className="flex items-center justify-center bg-black h-screen w-screen opacity-90">
-            <p className="text-center text-white" id="welcome-text">test</p>
+        <div className="container mx-auto h-1/2 flex justify-center items-center">
+            <h1 className=" text-center">I design engaging, responsive and sleek websites</h1>
         </div>
     )
 }
