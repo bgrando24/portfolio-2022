@@ -4,8 +4,9 @@ import React from "react"
 
 export function Welcome() {
     return (
-        <div className="container mx-auto h-1/2 flex justify-center items-center">
-            <h1 className=" text-center">I design engaging, responsive and sleek websites</h1>
+        <div className="container mx-auto h-1/2 flex justify-center items-center flex-col">
+            <h1 className="text-center text-5xl font-bold">Brandon Grando | Full Stack Developer</h1>
+            <h1 className="text-center text-2xl my-10">I love to build engaging, responsive and sleek websites</h1>
         </div>
     )
 }
