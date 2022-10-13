@@ -1,4 +1,5 @@
 import { About } from './components/about/About';
+import { Languages } from './components/languages/Languages';
 import { Navbar } from './components/navbar/Navbar';
 import { Welcome } from './components/welcome/Welcome';
 
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Welcome />
       <About />
+      <Languages />
     </div>  
   );
 }
