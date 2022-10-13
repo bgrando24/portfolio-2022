@@ -1,6 +1,5 @@
-/* Holds custom styling to create hamburger animation effects */
 
-.hamburger-top-open {
+/* .hamburger-top-open {
     transform: translate(0, 30px) rotate(225deg);
 }
 
@@ -11,4 +10,23 @@
 
 .hamburger-bottom-open {
     transform: translate(0, -1px) rotate(-225deg);
+} */
+
+
+
+
+
+.menuArrow-top-closed {
+    transform: rotate(-35deg);
+    transition: 300ms;
+}
+
+.menuArrow-bottom-closed {
+    transform: rotate(35deg);
+    transition: 300ms;
+}
+
+.open-menu {
+    transform: translate(0.5rem, 0);
+    transition: 300ms;
 }
