@@ -25,16 +25,20 @@ export function Sidebar() {
 
 const Menutoggle = () => {
 
+    // handles controlling whether the menu is 'open' or not
     const [menuOpen, setMenuOpen] = useState(true);
 
+    // applies custom CSS classes to create the side menu animation
     const rotateMenuToggle = () => {
         if (menuOpen) {
             document.getElementById('menuArrowTop').classList.add('menuArrow-top-closed');
+            document.getElementById('menuArrowMiddle').classList.add('menuArrow-middle-closed');
             document.getElementById('menuArrowBottom').classList.add('menuArrow-bottom-closed');
             document.getElementById('sidebar').classList.add('open-menu');
             setMenuOpen(!menuOpen);
         } else {
             document.getElementById('menuArrowTop').classList.remove('menuArrow-top-closed');
+            document.getElementById('menuArrowMiddle').classList.remove('menuArrow-middle-closed');
             document.getElementById('menuArrowBottom').classList.remove('menuArrow-bottom-closed');
             document.getElementById('sidebar').classList.remove('open-menu');
             setMenuOpen(!menuOpen);
@@ -44,12 +48,13 @@ const Menutoggle = () => {
     return (
         <div className=' cursor-pointer' onClick={rotateMenuToggle}>
             <div id="menuArrowTop" className='bg-black w-16 h-2 rounded-lg ml-2 mt-10 rotate-[35deg] transition duration-300 ease-in-out'></div>
-            <div id="menuArrowBottom" className='bg-black w-16 h-2 rounded-lg ml-2 mt-6 mb-10 rotate-[-35deg] transition duration-300 ease-in-out'></div>
+            <div id='menuArrowMiddle' className='bg-black w-8 h-2 rounded-lg ml-1 mt-2 transition duration-300 ease-in-out'></div>
+            <div id="menuArrowBottom" className='bg-black w-16 h-2 rounded-lg ml-2 mt-2 mb-10 rotate-[-35deg] transition duration-300 ease-in-out'></div>
         </div>
     )
 }
 
-
+// Used to simplify the sidebar menu icons
 const SidebarIcon = ({ icon }) => {
     return (
         <div className='sidebar-icon'>
