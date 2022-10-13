@@ -1,7 +1,7 @@
 /* Holds custom styling to create hamburger animation effects */
 
 .hamburger-top-open {
-    transform: translate(0, 10px) rotate(225deg);
+    transform: translate(0, 30px) rotate(225deg);
 }
 
 .hamburger-middle-open {
@@ -10,5 +10,5 @@
 }
 
 .hamburger-bottom-open {
-    transform: translate(0, -21px) rotate(-225deg);
+    transform: translate(0, -1px) rotate(-225deg);
 }
