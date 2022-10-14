@@ -27,7 +27,8 @@
 }
 
 .menuArrow-middle-closed {
-    transform: translateX(2rem);
+    transform: translateX(2.5rem);
+    transition: 300ms;
 }
 
 .open-menu {

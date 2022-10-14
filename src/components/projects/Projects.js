@@ -1,4 +1,6 @@
 
+import img from './project-images/wfdesignbuild.png';
+
 const projects = [
     {name: "Todo App", path: ""},
     {name: "eCommerce Website", path:"" },
@@ -16,11 +18,24 @@ export function Projects() {
                 {
                     projects.map((project, i) => {
                         return (
-                            <div key={i} className="text-center text-lg bg-gray-500 rounded-xl h-40 w-1/3 m-1 hover:opacity-50 transition duration-500">{project.name}</div>
+                            <div key={i} className=" relative bg-gray-800 border rounded-xl h-40 w-1/3 ml-1 mt-1">
+                            <img className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={img}/>
+                            <ProjectButton name={project.name} />
+                            </div>
                         )
                     })
                 }
             </div>
         </div>
     );
+}
+
+// Component for simplifyting the project button
+const ProjectButton = ({ name }) => {
+    return (
+        <div className="flex flex-col h-full justify-center items-center z-1">
+        <h1 className=" font-bold text-white relative">{name}</h1>
+        <button className="text-center text-white bg-blue-600 rounded-lg w-32 h-10 hover:bg-black duration-500">View Project</button>
+        </div>
+    )
 }

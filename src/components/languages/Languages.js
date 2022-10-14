@@ -27,3 +27,11 @@ export function Languages() {
         </div>
     )
 }
+
+
+// Component for simplifyting the project button
+const ProjectButton = ({ name }) => {
+    return (
+        <button>{name}</button>
+    )
+}
