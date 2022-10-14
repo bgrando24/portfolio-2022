@@ -1,9 +1,9 @@
 // makes the menu toggle component visible when user scrolls
 const checkScroll = () => {
-    console.log(window.scrollY);
-    console.log(window.innerHeight); 
+    // console.log(window.scrollY);
+    // console.log(window.innerHeight); 
     if(window.scrollY >= window.innerHeight) {
-        console.log("Scrolled past trigger");
+        // console.log("Scrolled past trigger");
         document.getElementById('menuArrowDiv').classList.add('show-menuArrow');
     }
     else {
