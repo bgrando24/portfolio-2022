@@ -8,7 +8,7 @@ import './Navbar.css';
 export function Sidebar() {
 
     return (
-        <div className="fixed top-1 left-1 h-max w-30 flex flex-col text-white">
+        <div className="fixed top-1 left-1 h-max w-30 flex flex-col text-white z-40">
 
             <Menutoggle />
 
