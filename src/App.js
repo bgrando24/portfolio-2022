@@ -1,4 +1,5 @@
 import { About } from './components/about/About';
+import { Contact } from './components/contact/Contact';
 import { Languages } from './components/languages/Languages';
 import { Navbar } from './components/navbar/Navbar';
 import { Menutoggle, Sidebar } from './components/navbar/Sidebar';
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Languages />
       <Projects />
+      <Contact />
     </div>  
   );
 }

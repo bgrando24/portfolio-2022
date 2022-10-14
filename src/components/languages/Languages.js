@@ -26,7 +26,7 @@ export function Languages() {
                                 unmount: { scale: 0, y: 25 },
                             }}
                             >
-                                <div className="flex justify-center items-center bg-gray-200 shadow w-1/4 h-20 m-1 hover:scale-110 transition duration-200">
+                                <div className="flex justify-center items-center bg-gray-200 shadow w-72 min-w-[25%] h-20 m-1 hover:scale-110 transition duration-200">
                                     <div key={i}>{language.name}</div>   
                                 </div>
                             </Tooltip>
