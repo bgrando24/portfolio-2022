@@ -1,7 +1,7 @@
 import { About } from './components/about/About';
 import { Languages } from './components/languages/Languages';
 import { Navbar } from './components/navbar/Navbar';
-import { Sidebar } from './components/navbar/Sidebar';
+import { Menutoggle, Sidebar } from './components/navbar/Sidebar';
 import { Projects } from './components/projects/Projects';
 import { Welcome } from './components/welcome/Welcome';
 
