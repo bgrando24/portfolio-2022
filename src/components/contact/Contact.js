@@ -25,3 +25,14 @@ export function Contact() {
         </div>
     )
 }
+
+
+export function GoogleContactForm() {
+    return (
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfu8INDoiPheV0eLIU1NW7Stm0vn_Txj1230Wm6kCNQapRerA/viewform?embedded=true" 
+            width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">
+                Loading…
+        </iframe>
+    )
+}
