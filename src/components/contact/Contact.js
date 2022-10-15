@@ -29,10 +29,14 @@ export function Contact() {
 
 export function GoogleContactForm() {
     return (
+        <div className="container mx-auto w-640 flex justify-center h-[1250px] bg-white shadow-lg rounded-3xl">
         <iframe 
             src="https://docs.google.com/forms/d/e/1FAIpQLSfu8INDoiPheV0eLIU1NW7Stm0vn_Txj1230Wm6kCNQapRerA/viewform?embedded=true" 
-            width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">
+            width='640' frameborder="0" marginheight="0" marginwidth="0">
                 Loading…
         </iframe>
+        </div>
     )
 }
+
+// width="640" height="650" frameborder="0" marginheight="0" marginwidth="0"

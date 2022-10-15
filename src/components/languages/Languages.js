@@ -11,7 +11,7 @@ const languages = [
 
 export function Languages() {
     return (
-        <div className="container mx-auto h-auto bg-white -mt-20 pt-10 mb-20 rounded-3xl">
+        <div className="container mx-auto h-auto bg-white -mt-20 py-10 mb-20 rounded-3xl shadow-lg">
 
             <h1 className="text-center text-3xl text-bold mb-8">Languages</h1>
 
