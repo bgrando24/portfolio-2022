@@ -4,6 +4,7 @@ import {MdOutlineMail} from 'react-icons/md';
 import {AiOutlineQuestionCircle} from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import './Navbar.css';
+import { Tooltip } from '@material-tailwind/react';
 
 export function Sidebar() {
 
@@ -13,9 +14,9 @@ export function Sidebar() {
             <Menutoggle />
 
             <div id='sidebar' className='-translate-x-32 transition duration-300 ease-in-out'>
-                <SidebarIcon icon={<HiHome size="28"/>} />
-                <SidebarIcon icon={<MdOutlineMail size="28"/>} />
-                <SidebarIcon icon={<AiOutlineQuestionCircle size="28"/>} />
+                <SidebarIcon icon={<HiHome size="28"/>} content="Home"/>
+                <SidebarIcon icon={<MdOutlineMail size="28"/>} content="contact"/>
+                <SidebarIcon icon={<AiOutlineQuestionCircle size="28"/>} content="About this website"/>
             </div>
 
         </div>
@@ -55,10 +56,16 @@ export const Menutoggle = () => {
 }
 
 // Used to simplify the sidebar menu icons
-const SidebarIcon = ({ icon }) => {
+const SidebarIcon = ({ icon, content }) => {
     return (
+        <Tooltip
+            content={content}
+            placement="right"
+            className='px-2'
+        >
         <div className='sidebar-icon'>
             {icon}
         </div>
+        </Tooltip>
     )
 }

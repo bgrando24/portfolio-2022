@@ -29,6 +29,7 @@ export function Languages() {
                                 mount: { scale: 1, y: 0 },
                                 unmount: { scale: 0, y: 25 },
                             }}
+                            className='px-2 text-center'
                             >
                                 <div className="flex justify-center items-center bg-gray-200 font-bold shadow w-72 min-w-[25%] h-20 m-1 hover:scale-110 transition duration-200">
                                     <div key={i}>{language.name}</div>   
