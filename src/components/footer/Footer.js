@@ -1,4 +1,5 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { MdAlternateEmail } from 'react-icons/md';
 
 
 
@@ -14,6 +15,9 @@ export function Footer() {
                     <SocialIcon 
                         link="https://au.linkedin.com/in/brandon-grando-388437192" 
                         icon={<AiFillLinkedin size="50" />} />
+                    <SocialIcon 
+                        link="mailto:brandongrando@gmail.com" 
+                        icon={<MdAlternateEmail size="50" />} />
                 </div>
 
                 <p className="pt-10 font-bold opacity-50">Brandon Grando <span>&copy;</span> 2022</p>
