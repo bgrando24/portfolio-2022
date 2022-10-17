@@ -15,7 +15,7 @@ const languages = [
 
 export function Languages() {
     return (
-        <div className="container mx-auto h-auto bg-white -mt-20 py-10 mb-20 rounded-3xl shadow-lg">
+        <div className="container mx-auto h-auto bg-white -mt-20 py-10 mb-20 rounded-3xl shadow-xl">
 
             <h1 className="text-center text-3xl text-bold mb-8">The tech I've learnt</h1>
 
@@ -31,7 +31,7 @@ export function Languages() {
                             }}
                             className='px-2 text-center'
                             >
-                                <div className="flex justify-center items-center bg-gray-200 font-bold shadow w-72 min-w-[25%] h-20 m-1 hover:scale-110 transition duration-200">
+                                <div className="flex justify-center items-center bg-gray-200 font-bold shadow w-40 min-w-[25%] h-20 m-1 rounded hover:scale-110 transition duration-200">
                                     <div key={i}>{language.name}</div>   
                                 </div>
                             </Tooltip>

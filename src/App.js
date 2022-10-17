@@ -1,5 +1,6 @@
 import { About } from './components/about/About';
 import { Contact, GoogleContactForm } from './components/contact/Contact';
+import { Footer } from './components/footer/Footer';
 import { Languages } from './components/languages/Languages';
 import { Navbar } from './components/navbar/Navbar';
 import { Menutoggle, Sidebar } from './components/navbar/Sidebar';
@@ -18,6 +19,7 @@ function App() {
       <Languages />
       <Projects />
       <GoogleContactForm />
+      <Footer />
     </div>  
   );
 }

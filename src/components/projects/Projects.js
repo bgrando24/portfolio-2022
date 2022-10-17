@@ -10,7 +10,7 @@ const projects = [
 
 export function Projects() {
     return (
-        <div className="container mx-auto mb-20">
+        <div className="container mx-auto mb-20 rounded-3xl shadow-lg pb-20">
 
             <h1 className="text-center text-3xl text-bold mb-8">My Projects</h1>
 

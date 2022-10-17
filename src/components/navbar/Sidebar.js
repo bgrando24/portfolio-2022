@@ -15,7 +15,7 @@ export function Sidebar() {
 
             <div id='sidebar' className='-translate-x-32 transition duration-300 ease-in-out'>
                 <SidebarIcon icon={<HiHome size="28"/>} content="Home"/>
-                <SidebarIcon icon={<MdOutlineMail size="28"/>} content="contact"/>
+                <SidebarIcon icon={<MdOutlineMail size="28"/>} content="Contact"/>
                 <SidebarIcon icon={<AiOutlineQuestionCircle size="28"/>} content="About this website"/>
             </div>
 
