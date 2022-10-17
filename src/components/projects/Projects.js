@@ -1,5 +1,5 @@
 
-import img from './project-images/wfdesignbuild.png';
+import todo_app from './project-images/todo-app.png';
 
 const projects = [
     {name: "Todo App", path: ""},
@@ -24,7 +24,7 @@ export function Projects() {
                                 onMouseEnter={() => document.getElementById("project-button-"+project.name).style.zIndex = 10} 
                                 onMouseLeave={() => document.getElementById("project-button-"+project.name).style.zIndex = 0}    
                             >
-                            <img  className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={img}/>
+                            <img  className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={todo_app}/>
                             <ProjectButton name={project.name} />
                             </div>
                         )
