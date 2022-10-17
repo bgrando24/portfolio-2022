@@ -2,7 +2,7 @@
 const checkScroll = () => {
     // console.log(window.scrollY);
     // console.log(window.innerHeight); 
-    if(window.scrollY >= window.innerHeight) {
+    if(window.scrollY >= window.innerHeight/4) {
         // console.log("Scrolled past trigger");
         document.getElementById('menuArrowDiv').classList.add('show-menuArrow');
     }
