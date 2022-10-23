@@ -1,11 +1,12 @@
 
 import todo_app from './project-images/todo-app.png';
+import seenit from './project-images/seenit-thumbnail.png';
 
 const projects = [
-    {name: "Todo App", path: ""},
-    {name: "eCommerce Website", path:"" },
-    {name: "Reddit Client", path:"" },
-    {name: "Restaurant Website", path:"" },
+    {name: "Todo App",              path:"", image: todo_app},
+    {name: "eCommerce Website",     path:"", image: todo_app},
+    {name: "Reddit Client",         path:"", image: seenit},
+    {name: "Restaurant Website",    path:"", image: todo_app},
 ]
 
 export function Projects() {
@@ -24,7 +25,7 @@ export function Projects() {
                                 onMouseEnter={() => document.getElementById("project-button-"+project.name).style.zIndex = 10} 
                                 onMouseLeave={() => document.getElementById("project-button-"+project.name).style.zIndex = 0}    
                             >
-                            <img  className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={todo_app}/>
+                            <img  className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={project.image}/>
                             <ProjectButton name={project.name} />
                             </div>
                         )
