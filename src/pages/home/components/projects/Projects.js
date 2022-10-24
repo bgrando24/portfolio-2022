@@ -11,9 +11,10 @@ const projects = [
 
 export function Projects() {
     return (
-        <div className="container mx-auto mb-20 rounded-3xl shadow-lg pb-20">
+        <div className="my-10 mb-20 pb-20 border border-b-gray-300">
 
-            <h1 className="text-center text-3xl text-bold mb-8">My Projects</h1>
+            <h1 className="text-center pt-10 text-3xl font-bold mb-2">My Projects</h1>
+            <h2 className='text-center text-lg mb-14'>Websites and applications designed and built by me</h2>
 
             <div className="flex flex-wrap justify-center h-1/2">
                 {

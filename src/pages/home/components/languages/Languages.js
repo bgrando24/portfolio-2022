@@ -17,7 +17,7 @@ export function Languages() {
     return (
         <div className="container mx-auto h-auto bg-white -mt-20 py-10 mb-20 rounded-3xl shadow-xl">
 
-            <h1 className="text-center text-3xl text-bold mb-8">The tech I've learnt</h1>
+            <h1 className="text-center text-3xl font-bold mb-8">The languages and technologies I use</h1>
 
             <div className="flex flex-wrap justify-center">
                 {

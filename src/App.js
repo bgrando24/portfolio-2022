@@ -6,19 +6,47 @@ import { Sidebar } from './pages/home/components/navbar/Sidebar';
 import { Projects } from './pages/home/components/projects/Projects';
 import { Welcome } from './pages/home/components/welcome/Welcome';
 
+// react router
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { ContactPage } from './pages/contact/components/ContactPage';
 
 
 function App() {
   return (
     <div className='w-screen h-screen bg-gray-200'>
-      {/* <Navbar /> */}
+
+      
+
+      <Router>
+
       <Sidebar />
-      <Welcome />
-      <About />
-      <Languages />
-      <Projects />
-      <GoogleContactForm />
-      <Footer />
+
+        <Routes>
+        
+          <Route path='/' element={<Navigate to='/portfolio-2022' />} />
+
+          <Route path='/portfolio-2022' element={
+            <>
+              <Welcome />
+              <About />
+              <Languages />
+              <Projects />
+              <Contact />
+              <Footer />
+            </>
+          } />
+
+          <Route path='/contact' element={
+            <ContactPage />
+          } />
+
+        </Routes>
+
+      </Router>
+
+      
+     
+
     </div>  
   );
 }

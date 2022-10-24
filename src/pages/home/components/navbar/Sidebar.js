@@ -5,18 +5,19 @@ import {AiOutlineQuestionCircle} from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 import './Navbar.css';
 import { Tooltip } from '@material-tailwind/react';
+import { Link } from 'react-router-dom';
 
 export function Sidebar() {
 
     return (
-        <div className="fixed top-1 left-1 h-max w-30 flex flex-col text-white z-40">
+        <div className="fixed top-5 left-1 h-max w-30 flex flex-col text-white z-40">
 
             <Menutoggle />
 
             <div id='sidebar' className='-translate-x-32 transition duration-300 ease-in-out'>
-                <SidebarIcon icon={<HiHome size="28"/>} content="Home"/>
-                <SidebarIcon icon={<MdOutlineMail size="28"/>} content="Contact"/>
-                <SidebarIcon icon={<AiOutlineQuestionCircle size="28"/>} content="About this website"/>
+                <SidebarIcon icon={<HiHome size="28"                    />} content="Home"                  path="/portfolio-2022"/>
+                <SidebarIcon icon={<MdOutlineMail size="28"             />} content="Contact"               path="/contact"/>
+                <SidebarIcon icon={<AiOutlineQuestionCircle size="28"   />} content="About this website"    path="/about"/>
             </div>
 
         </div>
@@ -47,8 +48,8 @@ export const Menutoggle = () => {
     }
 
     return (
-        <div id='menuArrowDiv' className=' cursor-pointer transition opacity-0 duration-300' onClick={rotateMenuToggle}>
-            <div id="menuArrowTop" className='bg-black w-8 h-1 rounded-lg ml-2 mt-10 rotate-[35deg] transition duration-300 ease-in-out'></div>
+        <div id='menuArrowDiv' className='relative left-2 cursor-pointer bg-white h-12 w-12 rounded-full' onClick={rotateMenuToggle}>
+            <div id="menuArrowTop" className='bg-black w-8 h-1 rounded-lg ml-2 mt-[0.9rem] rotate-[35deg] transition duration-300 ease-in-out'></div>
             <div id='menuArrowMiddle' className='bg-black w-4 h-1 rounded-lg ml-1 mt-1 transition duration-300 ease-in-out'></div>
             <div id="menuArrowBottom" className='bg-black w-8 h-1 rounded-lg ml-2 mt-1 mb-10 rotate-[-35deg] transition duration-300 ease-in-out'></div>
         </div>
@@ -56,16 +57,18 @@ export const Menutoggle = () => {
 }
 
 // Used to simplify the sidebar menu icons
-const SidebarIcon = ({ icon, content }) => {
+const SidebarIcon = ({ icon, content, path }) => {
     return (
-        <Tooltip
-            content={content}
-            placement="right"
-            className='px-2'
-        >
-        <div className='sidebar-icon'>
-            {icon}
-        </div>
-        </Tooltip>
+        <Link to={path}>
+            <Tooltip
+                content={content}
+                placement="right"
+                className='px-2'
+            >
+            <div className='sidebar-icon'>
+                {icon}
+            </div>
+            </Tooltip>
+        </Link>
     )
 }
