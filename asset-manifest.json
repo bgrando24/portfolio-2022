@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio-2022/static/css/main.cb6e01b1.css",
-    "main.js": "/portfolio-2022/static/js/main.0dc7be25.js",
+    "main.js": "/portfolio-2022/static/js/main.f1f1fd35.js",
     "static/media/seenit-thumbnail.png": "/portfolio-2022/static/media/seenit-thumbnail.8802450e651d1454a70f.png",
     "static/media/todo-app.png": "/portfolio-2022/static/media/todo-app.ad27a1633b9c8205cf1e.png",
     "static/media/avatar.svg": "/portfolio-2022/static/media/avatar.81d33d526133493640938cd4e1905325.svg",
     "index.html": "/portfolio-2022/index.html",
     "main.cb6e01b1.css.map": "/portfolio-2022/static/css/main.cb6e01b1.css.map",
-    "main.0dc7be25.js.map": "/portfolio-2022/static/js/main.0dc7be25.js.map"
+    "main.f1f1fd35.js.map": "/portfolio-2022/static/js/main.f1f1fd35.js.map"
   },
   "entrypoints": [
     "static/css/main.cb6e01b1.css",
-    "static/js/main.0dc7be25.js"
+    "static/js/main.f1f1fd35.js"
   ]
 }
