@@ -25,7 +25,7 @@ export function Projects() {
                                 onMouseEnter={() => document.getElementById("project-button-"+project.name).style.zIndex = 10} 
                                 onMouseLeave={() => document.getElementById("project-button-"+project.name).style.zIndex = 0}    
                             >
-                            <img  className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={project.image}/>
+                            <img alt="" className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={project.image}/>
                             <ProjectButton name={project.name} />
                             </div>
                         )

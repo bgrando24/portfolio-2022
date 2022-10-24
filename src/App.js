@@ -1,11 +1,10 @@
-import { About } from './components/about/About';
-import { Contact, GoogleContactForm } from './components/contact/Contact';
-import { Footer } from './components/footer/Footer';
-import { Languages } from './components/languages/Languages';
-import { Navbar } from './components/navbar/Navbar';
-import { Menutoggle, Sidebar } from './components/navbar/Sidebar';
-import { Projects } from './components/projects/Projects';
-import { Welcome } from './components/welcome/Welcome';
+import { About } from './pages/home/components/about/About';
+import { Contact, GoogleContactForm } from './pages/home/components/contact/Contact';
+import { Footer } from './pages/home/components/footer/Footer';
+import { Languages } from './pages/home/components/languages/Languages';
+import { Sidebar } from './pages/home/components/navbar/Sidebar';
+import { Projects } from './pages/home/components/projects/Projects';
+import { Welcome } from './pages/home/components/welcome/Welcome';
 
 
 

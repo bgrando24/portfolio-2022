@@ -24,6 +24,7 @@ export function Languages() {
                     languages.map((language, i) => {
                         return (
                             <Tooltip
+                            key={i}
                             content={language.description}
                             animate={{
                                 mount: { scale: 1, y: 0 },
@@ -32,7 +33,7 @@ export function Languages() {
                             className='px-2 text-center'
                             >
                                 <div className="flex justify-center items-center bg-gray-200 font-bold shadow w-40 min-w-[25%] h-20 m-1 rounded hover:scale-110 transition duration-200">
-                                    <div key={i}>{language.name}</div>   
+                                    <div>{language.name}</div>   
                                 </div>
                             </Tooltip>
                         )
