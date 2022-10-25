@@ -1,12 +1,13 @@
 
 import todo_app from './project-images/todo-app.png';
 import seenit from './project-images/seenit-thumbnail.png';
+import portfolio from './project-images/portfolio-thumbnail.png';
+import { Link } from 'react-router-dom';
 
 const projects = [
-    {name: "Todo App",              path:"", image: todo_app},
-    {name: "eCommerce Website",     path:"", image: todo_app},
-    {name: "Reddit Client",         path:"", image: seenit},
-    {name: "Restaurant Website",    path:"", image: todo_app},
+    {name: "Todo App",              path:"",        image: todo_app},
+    {name: "This Website!",         path:"/about",  image: portfolio},
+    {name: "Reddit Client",         path:"",        image: seenit},
 ]
 
 export function Projects() {
@@ -22,12 +23,18 @@ export function Projects() {
                         return (
                             <div 
                                 key={i} 
-                                className="flex justify-center items-center relative bg-gray-800 border rounded-xl h-40 w-96 min-w-[25%] ml-1 mt-1"
-                                onMouseEnter={() => document.getElementById("project-button-"+project.name).style.zIndex = 10} 
-                                onMouseLeave={() => document.getElementById("project-button-"+project.name).style.zIndex = 0}    
+                                className="flex justify-center items-center relative bg-gray-800 rounded-xl h-[300px] w-[600px] m-5"
+                                onMouseEnter={() => {
+                                    document.getElementById("project-button-"+project.name).style.zIndex = 10;
+                                    document.getElementById("project-img-"+project.name).style.opacity = 0;
+                                    }} 
+                                onMouseLeave={() => {
+                                    document.getElementById("project-button-"+project.name).style.zIndex = 0;
+                                    document.getElementById("project-img-"+project.name).style.opacity = 100;
+                                    }}    
                             >
-                            <img alt="" className='absolute rounded-xl h-full w-full z-10 hover:opacity-0 duration-700' src={project.image}/>
-                            <ProjectButton name={project.name} />
+                            <img key={'img'+i} id={"project-img-"+project.name} alt="" className='absolute rounded-xl h-full w-full z-10 duration-700' src={project.image}/>
+                            <ProjectButton key={'button'+i} name={project.name} path={project.path}/>
                             </div>
                         )
                     })
@@ -38,11 +45,13 @@ export function Projects() {
 }
 
 // Component for simplifyting the project button
-const ProjectButton = ({ name }) => {
+const ProjectButton = ({ name, path }) => {
     return (
-        <div className="flex flex-col h-full justify-center items-center z-1">
-        <h1 className=" font-bold text-white relative mb-3">{name}</h1>
-        <button id={"project-button-"+name} className="text-center text-white bg-blue-600 rounded-lg w-32 h-10 cursor-pointer hover:bg-black duration-500">View Project</button>
-        </div>
+        <a href={path}>
+            <div className="flex flex-col h-full justify-center items-center z-1">
+                <h1 className=" font-bold text-white relative mb-3">{name}</h1>
+                <button id={"project-button-"+name} className="text-center text-white bg-blue-600 rounded-lg w-32 h-10 cursor-pointer hover:bg-black duration-200">View Project</button>
+            </div>
+        </a>
     )
 }

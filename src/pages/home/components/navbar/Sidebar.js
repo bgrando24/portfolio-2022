@@ -49,9 +49,9 @@ export const Menutoggle = () => {
 
     return (
         <div id='menuArrowDiv' className='relative left-2 cursor-pointer bg-white h-12 w-12 rounded-full' onClick={rotateMenuToggle}>
-            <div id="menuArrowTop" className='bg-black w-8 h-1 rounded-lg ml-2 mt-[0.9rem] rotate-[35deg] transition duration-300 ease-in-out'></div>
+            <div id="menuArrowTop" className='bg-black w-[1.8rem] h-1 rounded-lg ml-2 mt-[0.9rem] rotate-[35deg] transition duration-300 ease-in-out'></div>
             <div id='menuArrowMiddle' className='bg-black w-4 h-1 rounded-lg ml-1 mt-1 transition duration-300 ease-in-out'></div>
-            <div id="menuArrowBottom" className='bg-black w-8 h-1 rounded-lg ml-2 mt-1 mb-10 rotate-[-35deg] transition duration-300 ease-in-out'></div>
+            <div id="menuArrowBottom" className='bg-black w-[1.8rem] h-1 rounded-lg ml-2 mt-1 mb-10 rotate-[-35deg] transition duration-300 ease-in-out'></div>
         </div>
     )
 }

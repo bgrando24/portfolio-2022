@@ -9,6 +9,7 @@ import { Welcome } from './pages/home/components/welcome/Welcome';
 // react router
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ContactPage } from './pages/contact/components/ContactPage';
+import { AboutWebiste } from './pages/about-website/components/AboutWebsite';
 
 
 function App() {
@@ -38,6 +39,10 @@ function App() {
 
           <Route path='/contact' element={
             <ContactPage />
+          } />
+
+          <Route path='/about' element={
+            <AboutWebiste />
           } />
 
         </Routes>

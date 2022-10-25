@@ -2,15 +2,18 @@ import { Tooltip } from "@material-tailwind/react"
 
 const languages = [
     {name: "JavaScript", description: "Use of JavaScript to build dynamic and interactive websites following ES6 standards"},
-    {name: "HTML5", description: "Clean, simple and effective use of HTML to structure frontend designs"},
-    {name: "CSS", description: "Use of raw CSS and tools such as Tailwind to create clean and visually appealing interfaces"},
+    {name: "HTML5", description: "Simple and effective use of HTML to structure frontend designs"},
+    {name: "CSS", description: "Use of vanilla CSS to create clean and visually appealing interfaces"},
+    {name: "Tailwind", description: "Primarily used with React to streamline development of UI and styling of components"},
     {name: "React", description: "Use of functional components and React hooks to develop a clean and consistent frontend"},
     {name: "Node", description: "Used in full-stack applications I have developed, primarily in running instances of Express.js for backends"},
     {name: "Express", description: "Secure and functional sever instances with Express to create full-stack applications, including interfacing with databases"},
     {name: "PostgreSQL", description: "Use of both raw SQL statements and integration with Express to effectively create, read, update and delete data"},
-    {name: "GitHub", description: "Use of Github for both version control and for cross-platform development between different devices"},
-    {name: "CLI", description: "Use of MacOS and Windows terminal for version control, running scripts and other development functions"},
-    {name: "C++", description: "While not part of my primary stack, I have used C++ to develop small CLI and graphical applications"}
+    {name: "Git/GitHub", description: "Use of Github for both version control and for cross-platform development between different devices"},
+    {name: "CLI", description: "Use of MacOS and Windows terminal for version control, executing scripts and other development functions"},
+    {name: "AWS", description: "Use of AWS services such as Relational Database Service for full-stack applications"},
+
+    // {name: "C++", description: "While not part of my primary stack, I have used C++ to develop small CLI and graphical applications"}
 ]
 
 export function Languages() {

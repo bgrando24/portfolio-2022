@@ -31,12 +31,12 @@ export function Contact() {
             <form onSubmit={handleContactSubmit}>
 
                 <div className="flex flex-col my-5 ">
-                    <label className="text-center text-lg font-bold mt-5 mb-2" for="subject">Subject</label>
+                    <label className="text-center text-lg font-bold mt-5 mb-2" htmlFor="subject">Subject</label>
                     <input className="mx-auto w-[95%] max-w-[800px] border border-gray-500 rounded-md text-center" type='text' id='subject' name="subject" value={subject} onChange={e => setSubject(e.target.value)}/>
                 </div>
 
                 <div className="flex flex-col my-5">
-                    <label className="text-center text-lg font-bold mt-5 mb-2" for='body'>Message</label>
+                    <label className="text-center text-lg font-bold mt-5 mb-2" htmlFor='body'>Message</label>
                     <input className="mx-auto w-[95%] max-w-[800px] h-52 border border-gray-500 rounded-md" type='textarea' id='body' name='body' value={body} onChange={e => setBody(e.target.value)}/>
                 </div>
 
