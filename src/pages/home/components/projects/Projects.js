@@ -5,9 +5,9 @@ import portfolio from './project-images/portfolio-thumbnail.png';
 import { Link } from 'react-router-dom';
 
 const projects = [
-    {name: "Todo App",              path:"",        image: todo_app},
-    {name: "This Website!",         path:"/about",  image: portfolio},
-    {name: "Reddit Client",         path:"",        image: seenit},
+    {name: "Todo App",              path:"https://github.com/bgrando24/todo-app",           image: todo_app},
+    {name: "This Website!",         path:"portfolio-2022/about",                            image: portfolio},
+    {name: "Reddit Client",         path:"https://bgrando24.github.io/reddit-client",       image: seenit},
 ]
 
 export function Projects() {
