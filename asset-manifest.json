@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-2022/static/css/main.e5bc8847.css",
-    "main.js": "/portfolio-2022/static/js/main.a6b438bf.js",
+    "main.css": "/portfolio-2022/static/css/main.15262e4d.css",
+    "main.js": "/portfolio-2022/static/js/main.bc7553f5.js",
     "static/media/seenit-thumbnail.png": "/portfolio-2022/static/media/seenit-thumbnail.8802450e651d1454a70f.png",
     "static/media/portfolio-thumbnail.png": "/portfolio-2022/static/media/portfolio-thumbnail.64b4a8447d607350b8ec.png",
     "static/media/todo-app.png": "/portfolio-2022/static/media/todo-app.ad27a1633b9c8205cf1e.png",
     "static/media/avatar.svg": "/portfolio-2022/static/media/avatar.81d33d526133493640938cd4e1905325.svg",
     "index.html": "/portfolio-2022/index.html",
-    "main.e5bc8847.css.map": "/portfolio-2022/static/css/main.e5bc8847.css.map",
-    "main.a6b438bf.js.map": "/portfolio-2022/static/js/main.a6b438bf.js.map"
+    "main.15262e4d.css.map": "/portfolio-2022/static/css/main.15262e4d.css.map",
+    "main.bc7553f5.js.map": "/portfolio-2022/static/js/main.bc7553f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5bc8847.css",
-    "static/js/main.a6b438bf.js"
+    "static/css/main.15262e4d.css",
+    "static/js/main.bc7553f5.js"
   ]
 }
