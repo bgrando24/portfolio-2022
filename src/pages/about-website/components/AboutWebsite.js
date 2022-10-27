@@ -5,7 +5,7 @@ export function AboutWebiste() {
         <div className="py-20 text-center">
             <h1 className="text-3xl font-bold">My portfolio website - Brandon Grando</h1>
 
-            <div className="container bg-white mx-auto my-5 py-2 w-[95%] h-[26rem] rounded-lg shadow">
+            <div className="container mx-auto my-5 py-2 w-[95%] h-[26rem]">
 
                 <div className="flex flex-col mx-auto w-[95%] max-w-[700px]">
 
