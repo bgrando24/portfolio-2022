@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const projects = [
     {name: "Todo App",              path:"https://github.com/bgrando24/todo-app",           image: todo_app},
     {name: "This Website!",         path:"https://github.com/bgrando24/portfolio-2022",     image: portfolio},
-    {name: "Reddit Client",         path:"https://github.com/bgrando24/portfolio-2022",       image: seenit},
+    {name: "Reddit Client",         path:"https://github.com/bgrando24/reddit-client",       image: seenit},
 ]
 
 export function Projects() {
