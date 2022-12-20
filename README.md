@@ -1,6 +1,7 @@
-v2 portfolio website now using tailwind
+--- Personal Portfolio Website for Brandon Grando ---
 
-Color palette: 
-blue-600 (#2563EB) -> main colour
-warm-grey-800 (#292524) -> dark text
-white (#FFFFFF) -> light text
+A personal portfolio website for the purpose of displaying myself as a web developer.
+
+This is a front-end application built with HTML, JavaScript, Tailwind, React.js with development happening in a Node environment.
+
+Deployment is via GitHub Pages.
