@@ -14,8 +14,6 @@ const languages = [
     {name: "Git/GitHub", description: "Use of Github for both version control and for cross-platform development between different devices"},
     {name: "CLI", description: "Use of MacOS and Windows terminal for version control, executing scripts and other development functions"},
     {name: "AWS", description: "Use of AWS services such as Relational Database Service for full-stack applications"},
-
-    // {name: "C++", description: "While not part of my primary stack, I have used C++ to develop small CLI and graphical applications"}
 ]
 
 export function Languages() {
