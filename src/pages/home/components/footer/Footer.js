@@ -20,7 +20,7 @@ export function Footer() {
                         icon={<MdAlternateEmail size="50" />} />
                 </div>
 
-                <p className="pt-10 font-bold text-gray-800">Brandon Grando <span>&copy;</span> 2022</p>
+                <p className="pt-10 font-bold text-gray-800">Brandon Grando <span>&copy;</span> 2023</p>
 
             </footer>
     )
