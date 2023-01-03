@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio-2022/static/css/main.f582490f.css",
-    "main.js": "/portfolio-2022/static/js/main.d287dded.js",
+    "main.js": "/portfolio-2022/static/js/main.bedc4141.js",
     "static/media/seenit-thumbnail.png": "/portfolio-2022/static/media/seenit-thumbnail.8802450e651d1454a70f.png",
+    "static/media/bg-pizza-resized.png": "/portfolio-2022/static/media/bg-pizza-resized.006794196044beacfd50.png",
     "static/media/portfolio-thumbnail.png": "/portfolio-2022/static/media/portfolio-thumbnail.64b4a8447d607350b8ec.png",
     "static/media/todo-app.png": "/portfolio-2022/static/media/todo-app.ad27a1633b9c8205cf1e.png",
     "static/media/avatar.svg": "/portfolio-2022/static/media/avatar.81d33d526133493640938cd4e1905325.svg",
     "index.html": "/portfolio-2022/index.html",
     "main.f582490f.css.map": "/portfolio-2022/static/css/main.f582490f.css.map",
-    "main.d287dded.js.map": "/portfolio-2022/static/js/main.d287dded.js.map"
+    "main.bedc4141.js.map": "/portfolio-2022/static/js/main.bedc4141.js.map"
   },
   "entrypoints": [
     "static/css/main.f582490f.css",
-    "static/js/main.d287dded.js"
+    "static/js/main.bedc4141.js"
   ]
 }
