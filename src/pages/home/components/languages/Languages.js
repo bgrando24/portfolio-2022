@@ -4,6 +4,8 @@ const languages = [
     {name: "JavaScript", description: "Use of JavaScript to build dynamic and interactive websites following ES6 standards"},
     {name: "HTML5", description: "Simple and effective use of HTML to structure frontend designs"},
     {name: "CSS", description: "Use of vanilla CSS to create clean and visually appealing interfaces"},
+    {name: "PHP", description: "Including Object-Oriented PHP development"},
+    {name: "Laravel", description: "Full-stack, MVC application built with Laravel"},
     {name: "Tailwind", description: "Primarily used with React to streamline development of UI and styling of components"},
     {name: "React", description: "Use of functional components and React hooks to develop a clean and consistent frontend"},
     {name: "Node", description: "Used in full-stack applications I have developed, primarily in running instances of Express.js for backends"},
