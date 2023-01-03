@@ -2,10 +2,12 @@
 import todo_app from './project-images/todo-app.png';
 import seenit from './project-images/seenit-thumbnail.png';
 import portfolio from './project-images/portfolio-thumbnail.png';
+import bg_pizza from './project-images/bg-pizza-resized.png';
 import { Link } from 'react-router-dom';
 
 const projects = [
     {name: "Todo App",              path:"https://github.com/bgrando24/todo-app",               image: todo_app},
+    {name: "BG's Pizza",            path:"https://github.com/bgrando24/bg_pizza",               image: bg_pizza},
     {name: "This Website!",         path:"https://github.com/bgrando24/portfolio-2022",         image: portfolio},
     {name: "Reddit Client",         path:"https://amplify.d5uf53b2ji13p.amplifyapp.com/home",   image: seenit},
 ]
