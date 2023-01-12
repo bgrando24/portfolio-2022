@@ -7,7 +7,7 @@ import { Projects } from './pages/home/components/projects/Projects';
 import { Welcome } from './pages/home/components/welcome/Welcome';
 
 // react router
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { ContactPage } from './pages/contact/components/ContactPage';
 import { AboutWebiste } from './pages/about-website/components/AboutWebsite';
 
@@ -18,7 +18,7 @@ function App() {
 
       
 
-      <Router>
+      <HashRouter>
 
       <Sidebar />
 
@@ -47,7 +47,7 @@ function App() {
 
         </Routes>
 
-      </Router>
+      </HashRouter>
 
       
      
